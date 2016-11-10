@@ -1,0 +1,21 @@
+extends master.pug
+
+block title
+	title #{title}
+	
+block content
+	h1 #{title}
+	table.table.table-striped.table-hover
+			tr
+				td: strong Grene
+				td= genre
+			tr
+				td: strong Rating
+				td= rating
+			tr
+				td: strong Award
+				td= award || 'No awards'
+			tr
+				td: strong Release Date
+				td= releaseDate != 'Invalid date' ?  releaseDate : 'Not available'
+				

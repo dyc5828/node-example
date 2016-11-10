@@ -1,0 +1,15 @@
+extends master.pug
+
+block title
+	title Dvds
+	
+block content
+	h1 Dvds
+	table.table.table-striped.table-hover
+		tr
+			th Title
+			th More
+		each title in titles
+			tr
+				td= title.title
+				td: a(href="/detail/"+title.id) info
