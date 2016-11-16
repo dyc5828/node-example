@@ -1,9 +1,20 @@
 extends master.pug
 
 block title
-	title detail
+	title Dvd Detail
 	
 block content
-	h1 detail
+	h1 Dvd Detail
 	table.table.table-striped.table-hover
-				
+			tr
+				td: strong Grene
+				td= genre
+			tr
+				td: strong Rating
+				td= rating
+			tr
+				td: strong Award
+				td= award
+			tr
+				td: strong Release Date
+				td= releaseDate
